@@ -17,7 +17,6 @@ if Meteor.isClient
 
   Template.hello.events
     'click #obsButton': ->
-      console.log 'i was clicked'
       observationStates = Session.get 'observationStates'
       currentState = observationStates[@name]
       if currentState is 'blank' or currentState is 'no'
