@@ -1,0 +1,15 @@
+<head>
+  <title>hello</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  {{#each observations}}
+    <button id="obsButton" class={{obsClass}}>{{name}}</button>
+  {{/each}}
+</template>
